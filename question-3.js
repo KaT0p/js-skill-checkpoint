@@ -4,7 +4,11 @@ function authenticateUser(username, password) {
   const validUsername = "user123";
   const validPassword = "securepass";
 
-  // เริ่มเขียนโค้ดตรงนี้
+  return (username === validUsername && password === validPassword)
+    ? "Login successful."
+    : "Login failed. Please check your username and password.";
+    // ถ้า username และ password ตรงกันกับค่า (validUsername และ validPassword) จะคืนค่า คำว่า Login successful. 
+    // ถ้าไม่ตรง จะคืนค่า คำว่า Login failed. Please check your username and password.
 }
 
 // ตัวอย่างการใช้งาน
